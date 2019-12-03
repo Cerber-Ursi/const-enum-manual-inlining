@@ -1,0 +1,24 @@
+{
+  "name": "const-enum-manual-inlining",
+  "version": "0.0.1",
+  "description": "Illustration to the combined usage of TypeScript constant enums and transpileOnly mode.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cerberuser/const-enum-manual-inlining.git"
+  },
+  "author": "konstantinbagrov <konstantinbagrov@axmor.com>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Cerberuser/const-enum-manual-inlining/issues"
+  },
+  "homepage": "https://github.com/Cerberuser/const-enum-manual-inlining#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "typescript": "3.7.2"
+  }
+}
