@@ -4,7 +4,7 @@
   "description": "Illustration to the combined usage of TypeScript constant enums and transpileOnly mode.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "webpack",
     "test": "npm run build && node dist/index.js"
   },
   "repository": {
@@ -19,6 +19,9 @@
   "homepage": "https://github.com/Cerberuser/const-enum-manual-inlining#readme",
   "devDependencies": {
     "@types/node": "^12.12.14",
-    "typescript": "3.7.2"
+    "ts-loader": "6.2.1",
+    "typescript": "3.7.2",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10"
   }
 }
