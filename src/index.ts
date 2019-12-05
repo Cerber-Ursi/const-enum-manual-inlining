@@ -1,3 +1,5 @@
+/// <reference path="enum.d.ts" />
+
 import { val1, val2 } from "./import";
 
 let valid = true;

@@ -4,7 +4,7 @@
   "description": "Illustration to the combined usage of TypeScript constant enums and transpileOnly mode.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "node compile-consts.js && webpack",
     "test": "npm run build && node dist/index.js"
   },
   "repository": {

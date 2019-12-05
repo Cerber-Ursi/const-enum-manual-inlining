@@ -1,4 +1,5 @@
 const path = require('path');
+const DefinePlugin = require('webpack/lib/DefinePlugin');
 
 module.exports = {
     mode: 'development',
@@ -24,5 +25,8 @@ module.exports = {
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
-    }
+    },
+    plugins: [
+        new DefinePlugin(require('./defined-consts.json'))
+    ]
 };
