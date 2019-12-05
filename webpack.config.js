@@ -1,4 +1,5 @@
 const path = require('path');
+const ConstEnumPlugin = require('./plugin/ConstEnumPlugin');
 
 module.exports = {
     mode: 'development',
@@ -24,5 +25,8 @@ module.exports = {
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
-    }
+    },
+    plugins: [
+        new ConstEnumPlugin()
+    ]
 };
